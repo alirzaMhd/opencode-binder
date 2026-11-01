@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+echo "Preparing the Binder environment..."
+curl -fsSL https://opencode.ai/install | bash
+
+echo 'export PATH="$HOME/.opencode/bin:$PATH"' >> ~/.bashrc
+
+echo "OpenCode installation step completed."
